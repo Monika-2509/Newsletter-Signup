@@ -1,0 +1,122 @@
+@font-face {
+    font-family:roboto-bold;
+    src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family:roboto-regular;
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(234, 29%, 20%);
+}
+
+.text-break{
+    display:inline;
+}
+.content-wrapper {
+    font-family:roboto-regular;
+    padding:40px 40px 0px 90px ;
+   
+}
+
+h1{
+     color:hsl(234, 29%, 20%);
+     font-family:roboto-bold;
+     /* font-weight: bold; */
+}
+
+.content-wrapper ul {
+      /* list-style-type: none; */
+      list-style-image: url("./assets/images/icon-list.svg");
+      display: flex ;
+      flex-direction: column;
+      gap:3px;
+      justify-content: center;
+      /* align-items: start; */
+}
+.content-wrapper ul > li{
+    padding:10px 0px 10px 12px;
+    text-align: justify;
+    
+}
+.form-label{
+    font-size:16px;
+    color:hsl(234, 29%, 20%);
+    font-family:roboto-bold;
+    
+}
+input{
+    cursor: pointer;
+}
+.validation{
+    font-size:12px;
+    font-family:roboto-bold;
+}
+.my-btn{
+    background-color: hsl(234, 29%, 20%);
+    color:white;
+    /* padding:10px px; */
+
+}
+.my-btn:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to top,  #ff6257 0%,  #e47a42 100%);
+    color:white;
+}
+/* .row > div img{
+    text-align: left;
+} */
+
+
+ .error{
+      color:hsl(4, 100%, 44%);
+      background-color:hsla(4, 100%, 67%, 0.5);
+      border: 1px solid hsl(4, 100%, 67%);
+ }
+
+@media screen and (min-width:992px) {
+   h1{
+       font-size: 48px;
+   }
+    .text-break{
+        display:block;
+    }
+    .my-btn{
+        padding:10px 70px;
+    }
+    /* .content-wrapper ul > li{
+        font-size: 20px;
+       } */
+}
+@media screen and (max-width:768px) {
+    .content-wrapper h1{
+      
+      text-align: center;
+   }
+   h1{
+    font-size: 24px;
+   }
+   .content-wrapper ul > li{
+     font-size: 18px;
+}
+    
+}
+@media screen and (max-width:992px) {
+  
+  
+   .content-wrapper{
+    padding: 20px;
+   }
+   .content-wrapper ul > li{
+    padding:10px 0px 10px 2px;
+    text-align: left;
+    /* display: inline-flex; */
+    /* font-size: 12px; */
+}
+}
